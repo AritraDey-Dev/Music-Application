@@ -1,0 +1,2 @@
+npm i react-icons
+npm in tailwind-merge
