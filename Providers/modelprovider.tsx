@@ -2,24 +2,21 @@
 
 import { useEffect, useState } from "react"
 import Model from "@/components/model";
-const ModelProvider=()=>{
-    const [isMounted,setIsMounted]=useState(false);
+import AuthModel from "@/components/authModel";
+const ModelProvider = () => {
+    const [isMounted, setIsMounted] = useState(false);
 
-    useEffect(()=>{
+    useEffect(() => {
         setIsMounted(true);
-    },[]);
-    if(!isMounted){
+    }, []);
+    if (!isMounted) {
         return null;
     }
-  return(
-       <>
-    <Model title="Test model" description="test desc" 
-    isOpen
-    onChange={()=>{}}>
-        Test children
-        </Model>
+    return (
+        <>
+          <AuthModel/>
         </>
-  )
+    )
 }
 
 export default ModelProvider;

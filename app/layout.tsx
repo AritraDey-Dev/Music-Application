@@ -24,10 +24,10 @@ export default function RootLayout({
         <SupabaseProvider>
           <UserProvider>
             <ModelProvider/>
-        <Sidebar>
+        {/* <Sidebar> */}
         
           {children}
-        </Sidebar>
+        {/* </Sidebar> */}
       
         </UserProvider>
         </SupabaseProvider>
