@@ -4,6 +4,7 @@ import "./globals.css";
 import Sidebar from "@/components/sidebar";
 import SupabaseProvider from "@/Providers/supabaseProvider";
 import UserProvider from "@/Providers/useProvider";
+import ModelProvider from "@/Providers/modelprovider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,10 +23,12 @@ export default function RootLayout({
       <body className={inter.className}>
         <SupabaseProvider>
           <UserProvider>
+            <ModelProvider/>
         <Sidebar>
         
           {children}
         </Sidebar>
+      
         </UserProvider>
         </SupabaseProvider>
       </body>

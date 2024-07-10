@@ -7,3 +7,4 @@ npx supabase gen types typescript --project-id "$PROJECT_REF" --schema public > 
 npm i @supabase/auth-helpers-next
 npm i @supabase/auth-helpers-react
 npm i stripe
+npm install @radix-ui/react-dialog
