@@ -10,6 +10,7 @@ import useAuthModel from "@/hooks/useAuthModel";
 import { useUser } from "@/hooks/useUser";
 import { useSupabaseClient } from "@supabase/auth-helpers-react";
 import { FaUserAlt } from "react-icons/fa";
+import toast from "react-hot-toast";
 
 interface HeaderProps {
   children: React.ReactNode;
@@ -27,8 +28,8 @@ const Header: React.FC<HeaderProps> = ({ children, className }) => {
     // todo: reset any playing songs
     router.refresh();
     if (error) {
-      console.error("Logout error:", error.message);
-    }
+      toast.error(error.message);
+    }else{toast.success("Logged Out")}
   };
 
   return (
