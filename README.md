@@ -1,6 +1,8 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
+<!-- Copy .env.ex to .env.local
+Then fill the required credentials from supabse or any other  auth provider or run a postgres docker container locally -->
 
 First, run the development server:
 
