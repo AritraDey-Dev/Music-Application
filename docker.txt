@@ -11,3 +11,4 @@ npm install @radix-ui/react-dialog
 npm i zustand
 npm i @supabase/auth-ui-react
 npm i @supabase/auth-ui-shared
+npm i react-hot-toast
